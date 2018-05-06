@@ -1,0 +1,102 @@
+<p id="notice"><%= notice %></p>
+
+<div class="jumbotron text-center">
+  <!-- <h1>Update Info</h1> -->
+  <h2><%= @updatesheet.datasheet.seq_number%><%= @updatesheet.seq_version %> - <%= @updatesheet.datasheet.seq_title%></h2>
+</div>
+
+<!-- <p>
+  <strong>Seq version:</strong>
+  <%= @updatesheet.seq_version %>
+</p> -->
+
+<h3>Course Notes</h3>
+</br>
+<h4>Approval Note:</h4>
+<p>
+  <%= @updatesheet.note_approval %>
+</p>
+</br>
+<h4>Proofing notes</h4>
+<p>
+  <%= @updatesheet.proofed_note %>
+</p>
+</br>
+<h4>General Details </h4>
+<p>
+  <strong>Pes number:</strong>
+  <%= @updatesheet.pes_number %>
+</p>
+
+<p>
+  <strong>Pes version:</strong>
+  <%= @updatesheet.pes_version %>
+</p>
+
+<p>
+  <strong>Date received:</strong>
+  <%= @updatesheet.date_received %>
+</p>
+
+<p>
+  <strong>Hold:</strong>
+  <%= @updatesheet.hold %>
+</p>
+
+<p>
+  <strong>Update course:</strong>
+  <%= @updatesheet.update_course %>
+</p>
+
+<p>
+  <strong>New course:</strong>
+  <%= @updatesheet.new_course %>
+</p>
+
+<p>
+  <strong>Text complete:</strong>
+  <%= @updatesheet.text_complete %>
+</p>
+
+<p>
+  <strong>Exam complete:</strong>
+  <%= @updatesheet.exam_complete %>
+</p>
+
+<p>
+  <strong>Course listed:</strong>
+  <%= @updatesheet.course_listed %>
+</p>
+
+<p>
+  <strong>Date listed:</strong>
+  <%= @updatesheet.date_listed %>
+</p>
+
+<p>
+  <strong>Role:</strong>
+  <%= @updatesheet.role %>
+</p>
+
+<p>
+  <strong>Rolep:</strong>
+  <%= @updatesheet.rolep %>
+</p>
+
+<p>
+  <strong>Irs number:</strong>
+  <%= @updatesheet.irs_number %>
+</p>
+
+<p>
+  <strong>Proofed:</strong>
+  <%= @updatesheet.proofed %>
+</p>
+
+<p>
+  <strong>Datasheet:</strong>
+  <%= @updatesheet.datasheet_id %>
+</p>
+
+<%= link_to 'Edit', edit_updatesheet_path(@updatesheet) %> |
+<%= link_to 'Back', updatesheets_path %>

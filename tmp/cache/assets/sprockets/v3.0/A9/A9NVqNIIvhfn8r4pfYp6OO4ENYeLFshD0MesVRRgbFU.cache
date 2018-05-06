@@ -1,0 +1,9 @@
+I"£(function() {
+  $.ajax({
+    url: "http://localhost:3001/ordersheets.json"
+  }).done(function(html) {
+    return $("#results").append(html);
+  });
+
+}).call(this);
+:ET
